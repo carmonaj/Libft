@@ -6,7 +6,7 @@
 #    By: jcarmona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/23 20:51:57 by jcarmona          #+#    #+#              #
-#    Updated: 2016/10/07 18:54:03 by jcarmona         ###   ########.fr        #
+#    Updated: 2016/10/17 08:01:25 by jcarmona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,6 @@ $(NAME):
 	$(CC) $(CFLAGS) -c $(FILES)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME) 
-	rm -rf $(OBJS)
 
 clean:
 	rm -rf $(OBJS)
