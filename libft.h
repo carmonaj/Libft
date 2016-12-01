@@ -6,12 +6,13 @@
 /*   By: jcarmona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 19:59:41 by jcarmona          #+#    #+#             */
-/*   Updated: 2016/10/13 15:58:45 by jcarmona         ###   ########.fr       */
+/*   Updated: 2016/12/01 09:02:46 by jcarmona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define NELEMS(x) (sizeof(x) / sizeof((x)[0]))
 
 # include <unistd.h>
 # include <stdlib.h>
