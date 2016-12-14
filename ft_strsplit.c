@@ -6,7 +6,7 @@
 /*   By: jcarmona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/28 16:49:50 by jcarmona          #+#    #+#             */
-/*   Updated: 2016/10/07 15:31:40 by jcarmona         ###   ########.fr       */
+/*   Updated: 2016/12/13 18:39:50 by jcarmona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,6 @@ char			**ft_strsplit(char const *s, char c)
 	if (!(fresh = make_fresh(s, c)))
 		return (NULL);
 	fresh = fill_fresh(i, len, temp, fresh);
+	free(temp);
 	return (fresh);
 }
